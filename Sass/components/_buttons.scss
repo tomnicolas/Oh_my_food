@@ -1,0 +1,29 @@
+.rech__loc {
+    display: flex;        
+    width: 100%;
+    height: 3.2em;
+    align-items: center;
+    justify-content: center;    
+    &__ville {
+        margin-left: 1.2em;
+        font-weight: 500;
+        font-size: 1em;
+        color: rgb(87, 87, 87);
+    }    
+}
+
+.rech__desc__explore {
+    height: 3.1em;
+    background-color: $clr-pri;
+    padding: 0em 1.4em;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    border-radius: 2em;
+    background: rgb(255,121,218);
+    background: linear-gradient(175deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 85%);
+    box-shadow: $btn-shadow;
+    border: 0;
+    margin: 2em 0 1.5em 0;
+
+}

@@ -1,0 +1,33 @@
+.rech {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darken($color-back, 5%);
+            
+}
+
+.rech__desc {
+    background-color: $color-back;
+    height: 18em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__titre {
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 0.6em;
+        width: 70%;
+    }
+    &__p {
+        text-align: center;
+        width: 90%;
+        font-size: 1.1em;
+        font-weight: 300;
+        font-stretch: 10%;
+        
+    }
+}
