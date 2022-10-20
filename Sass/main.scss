@@ -1,7 +1,21 @@
 @import "utils/variables";
+@import "utils/mixins";
 
-* {
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Shrikhand', cursive;
+@import "base/base";
+@import "base/animations";
 
-}
+@import "layouts/fonctionnement";
+@import "layouts/footer";
+@import "layouts/grids";
+@import "layouts/header";
+@import "layouts/menus";
+@import "layouts/recherche";
+@import "layouts/restos_liste";
+
+@import "components/buttons";
+@import "components/cards_restos";
+@import "components/vignette_menus";
+
+@import "pages/accueil";
+@import "pages/restos";
+
