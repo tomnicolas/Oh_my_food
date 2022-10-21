@@ -1,21 +1,15 @@
 .rech {
+    @include flex;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: darken($color-back, 5%);
+    background-color: darken($color-back, 8%);
             
 }
 
 .rech__desc {
+    @include flex;
     background-color: $color-back;
     height: 18em;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     &__titre {
         text-align: center;
         font-size: 1.5em;
@@ -27,7 +21,6 @@
         width: 90%;
         font-size: 1.1em;
         font-weight: 300;
-        font-stretch: 10%;
         
     }
 }

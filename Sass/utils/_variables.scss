@@ -1,8 +1,9 @@
 $color-pri: #9356DC;
 $color-sec: #FF79DA;
 $color-ter: #FF79DA;
-$color-back: #f4f4f4;
-$color-shadow: rgb(167, 167, 167);
+$color-back: #f0f0f0;
+$color-shadow: rgb(177, 177, 177);
+$color-shadow-lighter: rgb(213, 213, 213);
 $color-shadow-darker:rgb(101, 101, 101);
-$btn-shadow: 0 5px 8px;
-$btn-back-rad: linear-gradient(173deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 70%);
+$btn-shadow: 0 5px 12px;
+$btn-back-rad: linear-gradient(173deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 80%);

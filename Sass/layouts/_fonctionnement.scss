@@ -1,0 +1,17 @@
+.fonc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &__liste{
+        @include flex;
+        width: auto;
+        padding-left: 2em;
+        padding-right: 1em;
+        margin: 2em 0 4em 0;
+        gap: 1.5em
+    }
+    &__titre {
+        font-size: 1.5em;
+        margin: 2em 0 0 0.8em ;
+    }
+}
