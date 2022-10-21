@@ -1,0 +1,33 @@
+.fonc__card {
+    @include flex($dir:row,$jc:flex-start);
+    background-color: antiquewhite;
+    width: 100%;
+    border-radius: 1.2em;
+    position: relative;
+    box-shadow: $btn-shadow $color-shadow-lighter;
+    background-color: $color-back;
+    height: 4.5em;
+
+    &__titre {
+        font-size: 1em;
+        font-weight: 500;
+        margin-left: 1.5em;
+    }
+    & i {
+        font-size: 1.2em;
+        color:  rgb(119, 119, 119);
+        margin-left: 1.5em;
+    }
+    &__num {
+        @include flex();
+        position: absolute;
+        left: -1em;
+        font-size: 0.9em;
+        font-weight: 500;
+        background-color: $color-pri;
+        color: white;
+        height: 1.8em;
+        width: 1.8em;
+        border-radius: 1.8em;
+    }
+}
