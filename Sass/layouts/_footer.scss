@@ -1,0 +1,23 @@
+.footer {
+    @include flex($jc:flex-start, $ai:flex-start);
+    background-color: $color-back-footer;
+    width: 100%;
+    color: #fff;
+    padding: 1.6em 0 1.8em 1.4em;
+}
+.footer__liens {
+    @include flex($jc:flex-start, $ai:flex-start);
+    & i {
+        width: 1.6em;
+    }
+
+}
+.footer__liens__prop {
+    
+    margin-bottom: 0.5em;
+    &__click {
+    @include font($si: 1em,$wei: 400,$clr: #fff);
+        margin-bottom: 0.5em;
+    }
+
+}

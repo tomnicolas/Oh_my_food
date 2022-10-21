@@ -1,5 +1,4 @@
 * {
-  font-family: "Roboto", sans-serif, "Shrikhand", cursive;
   text-decoration: none;
   padding: 0;
   margin: 0;
@@ -29,7 +28,42 @@
   font-size: 1.5em;
   font-weight: 600;
   color: black;
+  font-family: "roboto";
   margin: 2em 0 0 0.8em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: rgb(63, 63, 63);
+  width: 100%;
+  color: #fff;
+  padding: 1.6em 0 1.8em 1.4em;
+}
+
+.footer__liens {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.footer__liens i {
+  width: 1.6em;
+}
+
+.footer__liens__prop {
+  margin-bottom: 0.5em;
+}
+.footer__liens__prop__click {
+  font-size: 1em;
+  font-weight: 400;
+  color: #fff;
+  font-family: "roboto";
+  margin-bottom: 0.5em;
 }
 
 .header {
@@ -70,6 +104,7 @@
   font-size: 1.5em;
   font-weight: 500;
   color: black;
+  font-family: "roboto";
   text-align: center;
   margin-bottom: 0.6em;
   width: 70%;
@@ -78,6 +113,7 @@
   font-size: 1.1em;
   font-weight: 300;
   color: black;
+  font-family: "roboto";
   text-align: center;
   width: 90%;
 }
@@ -95,6 +131,7 @@
   font-size: 1em;
   font-weight: 500;
   color: black;
+  font-family: "roboto";
   width: auto;
   padding-left: 1.3em;
   padding-right: 1.3em;
@@ -105,6 +142,7 @@
   font-size: 1.5em;
   font-weight: 600;
   color: black;
+  font-family: "roboto";
   margin: 2em 0 0 0.8em;
 }
 
@@ -121,6 +159,7 @@
   font-size: 1em;
   font-weight: 500;
   color: #626262;
+  font-family: "roboto";
   margin-left: 1.2em;
 }
 
@@ -143,6 +182,7 @@
   font-size: 1.1em;
   font-weight: 500;
   color: white;
+  font-family: "roboto";
 }
 
 .fonc__card__click, .rech__bouton__click, .resto__card__click {
@@ -185,6 +225,7 @@
   font-size: 0.9em;
   font-weight: 500;
   color: #32b091;
+  font-family: "roboto";
   position: absolute;
   padding: 0.4em 1em;
   border-radius: 0.2em;
@@ -208,11 +249,13 @@
   font-size: 1.1em;
   font-weight: 600;
   color: black;
+  font-family: "roboto";
 }
 .resto__card__banner__loc {
   font-size: 1em;
   font-weight: 300;
   color: black;
+  font-family: "roboto";
   margin-top: 0.3em;
 }
 
@@ -234,6 +277,7 @@
   font-size: 1em;
   font-weight: 500;
   color: black;
+  font-family: "roboto";
   margin-left: 1.5em;
 }
 .fonc__card i {
@@ -250,6 +294,7 @@
   font-size: 0.9em;
   font-weight: 500;
   color: white;
+  font-family: "roboto";
   position: absolute;
   left: -1em;
   background-color: rgb(146, 87, 219);
@@ -267,6 +312,14 @@
 
 .header__logo {
   width: 160px;
+}
+
+.footer__logo {
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Shrikhand";
+  margin-bottom: 0.7em;
 }
 
 /*# sourceMappingURL=style.css.map */

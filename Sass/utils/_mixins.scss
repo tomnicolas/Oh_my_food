@@ -8,10 +8,11 @@
 
 }
 
-@mixin font($si: 1em,$wei: 500,$clr: black) 
+@mixin font($si: 1em,$wei: 500,$clr: black, $fam:'roboto') 
 {
     font-size: $si;
     font-weight: $wei;
     color: $clr;
+    font-family: $fam;
 
 }
