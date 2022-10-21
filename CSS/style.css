@@ -9,6 +9,9 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: none;
 }
 .fonc__liste {
   display: flex;
@@ -18,7 +21,7 @@
   align-items: center;
   width: auto;
   padding-left: 2em;
-  padding-right: 1em;
+  padding-right: 1.4em;
   margin: 2em 0 4em 0;
   gap: 1.5em;
 }
@@ -40,7 +43,7 @@
   position: relative;
   padding-top: 10px;
   margin: 0;
-  box-shadow: 0px 0px 6px #a4a4a4;
+  box-shadow: 0px 0px 6px #acacac;
 }
 
 .rech {
@@ -50,7 +53,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: gainsboro;
+  background-color: #ebebeb;
 }
 
 .rech__desc {
@@ -59,7 +62,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(248, 248, 248);
   height: 18em;
   width: 100%;
 }
@@ -79,6 +82,32 @@
   width: 90%;
 }
 
+.resto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: none;
+  width: 100%;
+  background-color: rgb(248, 248, 248);
+}
+.resto__liste {
+  font-size: 1em;
+  font-weight: 500;
+  color: black;
+  width: auto;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  margin: 1.4em 0 3em 0;
+  gap: 3em;
+}
+.resto__titre {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: black;
+  margin: 2em 0 0 0.8em;
+}
+
 .rech__loc {
   display: flex;
   flex-direction: row;
@@ -91,17 +120,16 @@
 .rech__loc__ville {
   font-size: 1em;
   font-weight: 500;
-  color: black;
+  color: #626262;
   margin-left: 1.2em;
-  color: rgb(87, 87, 87);
 }
 
 .rech__desc__explore {
   position: relative;
   height: 3.6em;
-  padding: 0em 1.4em;
+  padding: 0em 1.6em;
   border-radius: 2em;
-  background: linear-gradient(173deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 80%);
+  background: linear-gradient(173deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 90%);
   box-shadow: 0 5px 12px;
   color: rgb(177, 177, 177);
   margin: 2em 0 1.5em 0;
@@ -109,7 +137,7 @@
 }
 .rech__desc__explore:hover {
   filter: brightness(110%);
-  color: rgb(101, 101, 101);
+  color: #656565;
 }
 .rech__desc__explore a {
   font-size: 1.1em;
@@ -117,11 +145,11 @@
   color: white;
 }
 
-.fonc__card__click, .rech__bouton__click {
+.fonc__card__click, .rech__bouton__click, .resto__card__click {
   display: block;
   z-index: 1;
 }
-.fonc__card__click:after, .rech__bouton__click:after {
+.fonc__card__click:after, .rech__bouton__click:after, .resto__card__click:after {
   position: absolute;
   top: 0;
   right: 0;
@@ -130,18 +158,76 @@
   content: "";
 }
 
+.resto__card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: none;
+  width: 100%;
+  height: 15.8em;
+  background-color: white;
+  border: none;
+  border-radius: 0.8em;
+  position: relative;
+  box-shadow: 0 5px 12px rgba(177, 177, 177, 0.4);
+  padding: 0;
+  margin-bottom: 1em;
+}
+.resto__card__img {
+  height: 70%;
+  width: auto;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 0.8em 0.8em 0 0;
+}
+.resto__card__new {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #32b091;
+  position: absolute;
+  padding: 0.4em 1em;
+  border-radius: 0.2em;
+  top: 1em;
+  right: 1em;
+  background-color: rgb(153, 226, 208);
+}
+.resto__card__coeur {
+  position: absolute;
+  bottom: 3em;
+  right: 2em;
+}
+.resto__card:hover {
+  box-shadow: 0 5px 12px rgb(177, 177, 177);
+}
+
+.resto__card__banner {
+  padding: 1em 1em;
+}
+.resto__card__banner__titre {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: black;
+}
+.resto__card__banner__loc {
+  font-size: 1em;
+  font-weight: 300;
+  color: black;
+  margin-top: 0.3em;
+}
+
 .fonc__card {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  background-color: antiquewhite;
   width: 100%;
+  border: none;
   border-radius: 1.2em;
   position: relative;
-  box-shadow: 0 5px 12px rgba(177, 177, 177, 0.8);
-  background-color: rgb(240, 240, 240);
+  box-shadow: 0 5px 12px rgba(177, 177, 177, 0.4);
+  background-color: rgb(248, 248, 248);
   height: 4.5em;
 }
 .fonc__card__titre {
@@ -152,7 +238,7 @@
 }
 .fonc__card i {
   font-size: 1.2em;
-  color: rgb(87, 87, 87);
+  color: rgb(149, 149, 149);
   margin-left: 1.8em;
 }
 .fonc__card__num {
@@ -172,7 +258,8 @@
   border-radius: 1.8em;
 }
 .fonc__card:hover {
-  background-color: rgba(146, 87, 219, 0.2);
+  background-color: rgba(146, 87, 219, 0.1);
+  box-shadow: 0 5px 12px rgb(177, 177, 177);
 }
 .fonc__card:hover i {
   color: rgb(146, 87, 219);

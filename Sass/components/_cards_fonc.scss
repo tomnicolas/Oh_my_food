@@ -1,7 +1,7 @@
 .fonc__card {
     @include flex($dir:row,$jc:flex-start);
-    background-color: antiquewhite;
     width: 100%;
+    border: none;
     border-radius: 1.2em;
     position: relative;
     box-shadow: $btn-shadow $color-shadow-lighter;
@@ -29,6 +29,7 @@
     }
     &:hover {
         background-color: $color-pri-light;
+        box-shadow: $btn-shadow $color-shadow;
         i {
             color: $color-pri;
         }

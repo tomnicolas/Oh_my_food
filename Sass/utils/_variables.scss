@@ -1,16 +1,17 @@
 $color-pri: rgb(146, 87, 219);
-$color-pri-light: rgba($color-pri, 0.2);
+$color-pri-light: rgba($color-pri, 0.1);
 $color-sec: rgb(255, 121, 218);
 $color-ter: rgb(153, 226, 208);
-$color-back: rgb(240, 240, 240);
+$color-ter-darker: darken($color-ter, $amount: 30%);
+$color-back: rgb(248, 248, 248);
 
 $color-shadow: rgb(177, 177, 177);
-$color-shadow-lighter: rgba($color-shadow, 0.8);
-$color-shadow-darker:rgb(101, 101, 101);
-$color-text-alt:rgb(87, 87, 87);
+$color-shadow-lighter: rgba($color-shadow, 0.4);
+$color-shadow-darker: darken($color-shadow, $amount: 30%);
+$color-text-alt:rgb(149, 149, 149);
 
 $btn-shadow: 0 5px 12px;
-$btn-back-rad: linear-gradient(173deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 80%);
+$btn-back-rad: linear-gradient(173deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 90%);
 
 
 $margin-titres-sec: 2em 0 0 0.8em;

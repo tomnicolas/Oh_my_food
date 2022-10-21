@@ -1,0 +1,47 @@
+.resto__card {
+    @include flex(column,nowrap,start,none);
+    width: 100%;
+    height: 15.8em;
+    background-color: white;
+    border: none;
+    border-radius: 0.8em;
+    position: relative;
+    box-shadow: $btn-shadow $color-shadow-lighter;
+    padding: 0;
+    margin-bottom: 1em;
+    &__img {
+        height: 70%;
+        width: auto;
+        object-fit: cover;
+        margin: 0;
+        border-radius: 0.8em 0.8em 0 0;
+    }
+    &__new {
+        @include font(0.9em,500,$color-ter-darker);
+        position: absolute;
+        padding: 0.4em 1em ;
+        border-radius: 0.2em;
+        top: 1em;
+        right: 1em;
+        background-color: $color-ter;
+    }
+    &__coeur {
+        position: absolute;
+        bottom: 3em;
+        right: 2em;
+    }
+    &:hover {
+        box-shadow: $btn-shadow $color-shadow;
+    }
+    
+}
+.resto__card__banner {
+    padding: 1em 1em;
+    &__titre {
+        @include font(1.1em,600)
+    }
+    &__loc {
+        @include font(1em, 300);
+        margin-top:0.3em;
+    }
+}

@@ -1,0 +1,19 @@
+.resto {
+    @include flex($ai:none);
+    width: 100%;
+    background-color: $color-back;
+    &__liste {
+        @include font();
+        width: auto;
+        padding-left: 1.3em;
+        padding-right: 1.3em;
+        margin: 1.4em 0 3em 0;
+        gap: 3em;
+
+    }
+    
+    &__titre {
+        @include font(1.5em,600);
+        margin: $margin-titres-sec ;
+    }
+}

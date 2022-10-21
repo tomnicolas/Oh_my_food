@@ -1,12 +1,11 @@
 .fonc {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    @include flex($ai:none);
     &__liste{
         @include flex;
         width: auto;
         padding-left: 2em;
-        padding-right: 1em;
+        padding-right: 1.4em;
         margin: 2em 0 4em 0;
         gap: 1.5em
     }
