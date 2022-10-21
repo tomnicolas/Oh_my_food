@@ -4,6 +4,52 @@
   margin: 0;
 }
 
+.resto__card__coeur i {
+  position: absolute;
+  bottom: 1.5em;
+  right: 1em;
+}
+.resto__card__coeur .box {
+  position: relative;
+  background: var(--dark);
+  border: 0.25rem solid var(--dark);
+  height: 8rem;
+  width: 8rem;
+  outline: 0;
+  overflow: hidden; /* Set to none to see fill square outside box */
+}
+.resto__card__coeur .box::before {
+  content: url(/images/st-white.svg);
+  /* content: "FILL";
+  font-size: 2rem;
+  color: var(--background);
+  font-family: Arial, Helvetica, sans-serif; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.resto__card__coeur .box::after {
+  content: "";
+  position: absolute;
+  bottom: -50%; /* Center sauare */
+  left: -50%; /* Center sauare */
+  height: 200%;
+  width: 200%;
+  background-color: var(--background);
+  border-radius: 35%; /* Smooth edges to appear like liquid */
+  animation: spin 6s ease-in-out infinite; /* Set to forwards to freeze on last frame */
+}
+@keyframes spin {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-100%) rotate(400deg);
+  }
+}
+
 .fonc {
   width: 100%;
   display: flex;
@@ -198,6 +244,13 @@
   content: "";
 }
 
+#heart-2 {
+  color: #9c47fc;
+  display: block;
+  background: -webkit-linear-gradient(#9c47fc, #356ad2);
+  -webkit-background-clip: text;
+}
+
 .resto__card {
   display: flex;
   flex-direction: column;
@@ -232,11 +285,6 @@
   top: 1em;
   right: 1em;
   background-color: rgb(153, 226, 208);
-}
-.resto__card__coeur {
-  position: absolute;
-  bottom: 3em;
-  right: 2em;
 }
 .resto__card:hover {
   box-shadow: 0 5px 12px rgb(177, 177, 177);

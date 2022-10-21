@@ -25,11 +25,6 @@
         right: 1em;
         background-color: $color-ter;
     }
-    &__coeur {
-        position: absolute;
-        bottom: 3em;
-        right: 2em;
-    }
     &:hover {
         box-shadow: $btn-shadow $color-shadow;
     }
