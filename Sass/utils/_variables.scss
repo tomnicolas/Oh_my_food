@@ -1,5 +1,8 @@
-$clr-pri: #9356DC;
+$color-pri: #9356DC;
 $color-sec: #FF79DA;
 $color-ter: #FF79DA;
 $color-back: #f4f4f4;
-$btn-shadow: 0 5px 10px rgb(167, 167, 167);
+$color-shadow: rgb(167, 167, 167);
+$color-shadow-darker:rgb(101, 101, 101);
+$btn-shadow: 0 5px 8px;
+$btn-back-rad: linear-gradient(173deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 70%);

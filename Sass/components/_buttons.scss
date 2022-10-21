@@ -13,17 +13,21 @@
 }
 
 .rech__desc__explore {
-    height: 3.1em;
-    background-color: $clr-pri;
-    padding: 0em 1.4em;
-    font-size: 1em;
-    font-weight: 500;
-    color: white;
+    height: 3.6em;
+    padding: 0em 1.4em;    
     border-radius: 2em;
-    background: rgb(255,121,218);
-    background: linear-gradient(175deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 85%);
+    background: $btn-back-rad;
     box-shadow: $btn-shadow;
-    border: 0;
+    color: $color-shadow;
     margin: 2em 0 1.5em 0;
-
+    border: none;
+    &:hover {
+        filter: brightness(110%);
+        color: $color-shadow-darker;
+    }
+    & a {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: white;    
+    }
 }
