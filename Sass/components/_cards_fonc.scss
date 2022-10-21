@@ -9,25 +9,28 @@
     height: 4.5em;
 
     &__titre {
-        font-size: 1em;
-        font-weight: 500;
+        @include font;
         margin-left: 1.5em;
     }
     & i {
         font-size: 1.2em;
-        color:  rgb(119, 119, 119);
-        margin-left: 1.5em;
+        color: $color-text-alt;
+        margin-left: 1.8em;
     }
     &__num {
         @include flex();
+        @include font(0.9em,500,white);
         position: absolute;
         left: -1em;
-        font-size: 0.9em;
-        font-weight: 500;
         background-color: $color-pri;
-        color: white;
         height: 1.8em;
         width: 1.8em;
         border-radius: 1.8em;
+    }
+    &:hover {
+        background-color: $color-pri-light;
+        i {
+            color: $color-pri;
+        }
     }
 }

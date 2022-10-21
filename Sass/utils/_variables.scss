@@ -1,9 +1,16 @@
-$color-pri: #9356DC;
-$color-sec: #FF79DA;
-$color-ter: #FF79DA;
-$color-back: #f0f0f0;
+$color-pri: rgb(146, 87, 219);
+$color-pri-light: rgba($color-pri, 0.2);
+$color-sec: rgb(255, 121, 218);
+$color-ter: rgb(153, 226, 208);
+$color-back: rgb(240, 240, 240);
+
 $color-shadow: rgb(177, 177, 177);
-$color-shadow-lighter: rgb(213, 213, 213);
+$color-shadow-lighter: rgba($color-shadow, 0.8);
 $color-shadow-darker:rgb(101, 101, 101);
+$color-text-alt:rgb(87, 87, 87);
+
 $btn-shadow: 0 5px 12px;
 $btn-back-rad: linear-gradient(173deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 80%);
+
+
+$margin-titres-sec: 2em 0 0 0.8em;
