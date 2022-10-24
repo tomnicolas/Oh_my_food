@@ -43,6 +43,11 @@
 #heart-2 {
     color: #9c47fc;
     display: block;
-    background: -webkit-linear-gradient(#9c47fc, #356ad2);
-    -webkit-background-clip: text;
+}
+
+.header__nav__back-button {
+    position: absolute;
+    left: 1.5em;
+    color: #000;
+
 }

@@ -1,0 +1,30 @@
+.menu__section__list__card {
+    @include flex($ai:flex-start);
+    position: relative;
+    background-color: #fff;
+    box-shadow: $btn-shadow $color-shadow-lighter;
+    width: 98%;
+    margin-bottom: 0.7em;
+    border-radius: 1em;
+    padding: 0.8em 0 0.8em 0.7em;
+
+    &__price {
+        @include font;
+        position: absolute;
+        right: 1.5em;
+        bottom: 0.8em;
+    }
+
+    &__titre {
+        @include font(1.1em);
+    }
+    
+    &__desc {
+        @include font($si:0.9em,$wei:300);
+        margin-top: 0.3em;
+
+    }
+
+
+
+}

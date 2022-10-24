@@ -1,0 +1,41 @@
+.menu {
+    @include flex($ai:none);
+    position: absolute;
+    top: 17.6em;
+    left: 0;
+    right: 0;
+    max-width: 40em;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 1em;
+    background-color: $color-back;
+    border-radius: 2.4em 2.4em 0 0;
+    &__head {
+        @include flex(row,wrap,space-between,center);
+        @include font(1.1em,200,black,'Shrikhand');
+        position: relative;
+        width: auto;
+        margin: 1.8em 0 1.8em 0;
+    }
+}
+.menu__section {
+    @include flex($ai:flex-start);
+    width: auto;
+    &__titre {
+        @include font($wei:400);
+        text-transform: uppercase;
+    }
+    &__underscore {
+        margin: 5px 0;
+        width: 2.5em;
+        height: 3px;
+        background-color: $color-ter;
+    }
+
+}
+
+.menu__section__list {
+    @include flex;
+    width: 100%;
+    margin-top: 0.5em;
+}

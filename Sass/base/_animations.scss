@@ -1,11 +1,21 @@
-.resto__card__coeur {
-    & i{
-        position: absolute;
-        bottom: 1.5em;
-        right: 1em;
-    }
-    
-  
+.coeur__index {
+  & i {
+      position: absolute;
+      bottom: 1.5em;
+      right: 1em;
+  }
+}
+
+.coeur__restos {
+  & i {
+    position: absolute;
+    right: 1em;
+
+  }
+
+
+}
+
   
     .box {
     position: relative;
@@ -48,4 +58,4 @@
       transform: translateY(-100%) rotate(400deg);
     }
   }
-    }
+    
