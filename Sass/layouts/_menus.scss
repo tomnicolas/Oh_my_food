@@ -1,28 +1,31 @@
 .menu {
-    @include flex($ai:none);
-    position: absolute;
-    top: 17.6em;
-    left: 0;
-    right: 0;
-    max-width: 40em;
+    @include flex();
+    max-width: 600px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 1em;
     background-color: $color-back;
-    border-radius: 2.4em 2.4em 0 0;
     &__head {
-        @include flex(row,wrap,space-between,center);
-        @include font(1.1em,200,black,'Shrikhand');
-        position: relative;
-        width: auto;
-        margin: 1.8em 0 1.8em 0;
+        @include flex($ai:space-between);
+        @include font(0.9em,400,black,'Shrikhand');
+        position: absolute;
+        background-color: $color-back;
+        z-index: 1;
+        padding: 2em 1.2em;
+        border-radius: 2.5em 2.5em 0 0 ;
+        top: 19.6em;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 600px;
     }
 }
 .menu__section {
     @include flex($ai:flex-start);
-    width: auto;
+    width: 100%;
     &__titre {
-        @include font($wei:400);
+        @include font(1em,$wei:400);
         text-transform: uppercase;
     }
     &__underscore {
@@ -36,6 +39,6 @@
 
 .menu__section__list {
     @include flex;
-    width: 100%;
-    margin-top: 0.5em;
+    width: 98%;
+    margin: 0.5em 0 1.6em 0;
 }

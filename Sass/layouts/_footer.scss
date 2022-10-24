@@ -1,7 +1,6 @@
 .footer {
     @include flex($jc:flex-start, $ai:flex-start);
     background-color: $color-back-footer;
-    width: 100%;
     color: #fff;
     padding: 1.6em 0 1.8em 1.4em;
 }

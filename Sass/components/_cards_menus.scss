@@ -3,10 +3,12 @@
     position: relative;
     background-color: #fff;
     box-shadow: $btn-shadow $color-shadow-lighter;
-    width: 98%;
-    margin-bottom: 0.7em;
+    width: 100%;
+    margin-bottom: 0.9em;
     border-radius: 1em;
     padding: 0.8em 0 0.8em 0.7em;
+    &:hover {
+    }
 
     &__price {
         @include font;

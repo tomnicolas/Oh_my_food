@@ -27,6 +27,25 @@
     }
 }
 
+.menu__bouton {
+    height: 3.6em;
+    padding: 0em 3.5em;    
+    border-radius: 2em;
+    width: fit-content;
+    background: $btn-back-rad;
+    box-shadow: $btn-shadow;
+    color: $color-shadow;
+    margin: 0em 0 3em 0;
+    border: none;
+    &:hover {
+        filter: brightness(110%);
+        color: $color-shadow-darker;
+    }
+    & a {
+        @include font(1.1em,500,white); 
+    }
+}
+
 .fonc__card__click, .rech__bouton__click, .resto__card__click{
     display: block;
     z-index: 1;
