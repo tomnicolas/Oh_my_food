@@ -16,3 +16,9 @@
     font-family: $fam;
 
 }
+
+@mixin media($_key) {
+  @media screen and (min-width: map-get($breakpoints, $_key)) {
+    &{ @content; }
+  }
+}

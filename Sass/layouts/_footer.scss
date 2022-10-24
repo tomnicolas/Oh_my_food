@@ -10,7 +10,7 @@
     & i {
         width: 1.6em;
     }
-    @media (min-width: 768px) {
+    @include media(mobile) {
         @include flex($dir:row,$jc:space-between);
         width: 90%;
         align-self: center;

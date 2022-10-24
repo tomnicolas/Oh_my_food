@@ -2,7 +2,7 @@ $color-pri: rgb(146, 87, 219);
 $color-pri-light: rgba($color-pri, 0.2);
 $color-sec: rgb(255, 121, 218);
 $color-ter: rgb(153, 226, 208);
-$color-ter-darker: darken($color-ter, $amount: 30%);
+$color-ter-darker: darken($color-ter, $amount: 40%);
 
 $color-back: hsl(0, 0%, 93%);
 $color-back-footer: rgb(63, 63, 63); 
@@ -18,3 +18,9 @@ $btn-back-rad: linear-gradient(173deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1
 
 
 $margin-titres-sec: 2em 0 0 0.8em;
+
+$breakpoints: (
+    mobile:768px,
+    tablette-down:992px,
+    tablette:1080px
+)
