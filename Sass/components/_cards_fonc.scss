@@ -1,6 +1,7 @@
 .fonc__card {
     @include flex($dir:row,$jc:flex-start);
     width: 100%;
+    max-width: 25em;
     border: none;
     border-radius: 1.2em;
     position: relative;

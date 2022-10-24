@@ -2,13 +2,20 @@
     @include flex($jc:flex-start, $ai:flex-start);
     background-color: $color-back-footer;
     color: #fff;
-    padding: 1.6em 0 1.8em 1.4em;
+    padding: 1.6em 1.4em 1.8em 1.4em;
 }
+
 .footer__liens__liste {
     @include flex($jc:flex-start, $ai:flex-start);
     & i {
         width: 1.6em;
     }
+    @media (min-width: 768px) {
+        @include flex($dir:row,$jc:space-between);
+        width: 90%;
+        align-self: center;
+    }
+
 
 }
 .footer__liens {    

@@ -60,12 +60,15 @@
   }
 }
 .fonc {
-  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: none;
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .fonc__liste {
   display: flex;
@@ -95,7 +98,7 @@
   align-items: flex-start;
   background-color: rgb(63, 63, 63);
   color: #fff;
-  padding: 1.6em 0 1.8em 1.4em;
+  padding: 1.6em 1.4em 1.8em 1.4em;
 }
 
 .footer__liens__liste {
@@ -107,6 +110,17 @@
 }
 .footer__liens__liste i {
   width: 1.6em;
+}
+@media (min-width: 768px) {
+  .footer__liens__liste {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    align-self: center;
+  }
 }
 
 .footer__liens {
@@ -137,7 +151,7 @@
   position: relative;
   padding-top: 10px;
   margin: 0;
-  box-shadow: 0px 0px 6px #a8a8a8;
+  box-shadow: 0px 0px 6px #a1a1a1;
 }
 
 .menu {
@@ -146,11 +160,11 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 600px;
+  max-width: 800px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 1em;
-  background-color: hsl(0deg, 0%, 96%);
+  background-color: hsl(0deg, 0%, 93%);
 }
 .menu__head {
   display: flex;
@@ -163,7 +177,7 @@
   color: black;
   font-family: "Shrikhand";
   position: absolute;
-  background-color: hsl(0deg, 0%, 96%);
+  background-color: hsl(0deg, 0%, 93%);
   z-index: 1;
   padding: 2em 1.2em;
   border-radius: 2.5em 2.5em 0 0;
@@ -172,7 +186,7 @@
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .menu__section {
@@ -206,6 +220,15 @@
   width: 98%;
   margin: 0.5em 0 1.6em 0;
 }
+@media screen and (min-width: 768px) {
+  .menu__section__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .rech {
   display: flex;
@@ -214,7 +237,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #e8e8e8;
+  background-color: #e0e0e0;
 }
 
 .rech__desc {
@@ -223,7 +246,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: hsl(0deg, 0%, 96%);
+  background-color: hsl(0deg, 0%, 93%);
   height: 18em;
   width: 100%;
 }
@@ -252,18 +275,22 @@
   justify-content: center;
   align-items: none;
   width: 100%;
-  background-color: hsl(0deg, 0%, 96%);
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: hsl(0deg, 0%, 93%);
 }
 .resto__liste {
-  font-size: 1em;
-  font-weight: 500;
-  color: black;
-  font-family: "roboto";
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   width: auto;
   padding-left: 1.3em;
   padding-right: 1.3em;
   margin: 1.4em 0 3em 0;
-  gap: 3em;
+  gap: 1em;
 }
 .resto__titre {
   font-size: 1.5em;
@@ -367,12 +394,10 @@
   width: 100%;
   height: 15.8em;
   background-color: white;
-  border: none;
   border-radius: 0.8em;
   position: relative;
   box-shadow: 0 5px 12px rgba(177, 177, 177, 0.4);
   padding: 0;
-  margin-bottom: 1em;
 }
 .resto__card__img {
   height: 70%;
@@ -421,11 +446,12 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+  max-width: 25em;
   border: none;
   border-radius: 1.2em;
   position: relative;
   box-shadow: 0 5px 12px rgba(177, 177, 177, 0.4);
-  background-color: hsl(0deg, 0%, 96%);
+  background-color: hsl(0deg, 0%, 93%);
   height: 4.5em;
 }
 .fonc__card__titre {
@@ -458,7 +484,7 @@
   border-radius: 1.8em;
 }
 .fonc__card:hover {
-  background-color: rgba(146, 87, 219, 0.1);
+  background-color: rgba(146, 87, 219, 0.2);
   box-shadow: 0 5px 12px rgb(177, 177, 177);
 }
 .fonc__card:hover i {
@@ -475,6 +501,7 @@
   background-color: #fff;
   box-shadow: 0 5px 12px rgba(177, 177, 177, 0.4);
   width: 100%;
+  max-width: 25em;
   margin-bottom: 0.9em;
   border-radius: 1em;
   padding: 0.8em 0 0.8em 0.7em;
