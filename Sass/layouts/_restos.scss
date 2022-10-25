@@ -4,7 +4,7 @@
     margin-left: auto;
     margin-right: auto;
     background-color: $color-back;
-    max-width: 1000px;
+    max-width: $max-width-maxi;
     @include media(tablette) {
         border-radius: 2em 2em 0 0;
     }

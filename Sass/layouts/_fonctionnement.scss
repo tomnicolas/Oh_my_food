@@ -1,7 +1,7 @@
 .fonc {
     @include flex($ai:none);
     width: 100%;
-    max-width: 1000px;
+    max-width: $max-width-maxi;
     margin-left: auto;
     margin-right: auto;
     &__liste{

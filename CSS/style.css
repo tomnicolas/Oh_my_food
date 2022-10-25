@@ -94,6 +94,26 @@
   animation-delay: 800ms;
 }
 
+.menu__card__checked {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: #fff;
+  z-index: 1;
+  overflow: hidden;
+  background-color: rgb(153, 226, 208);
+  border-radius: 0 1em 1em 0;
+  height: 4.2em;
+  width: 4.2em;
+  right: -4.2em;
+  transform-origin: right;
+  overflow: hidden;
+  transition: transform 500ms;
+}
+
 @keyframes menu-card {
   0% {
     transform: translateY(10px);
@@ -102,6 +122,14 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@keyframes menu-card-checked {
+  0% {
+    transform: translateX(4.2em);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 .fonc {
@@ -224,7 +252,7 @@
   z-index: 1;
   padding: 2em 1.2em;
   border-radius: 2.5em 2.5em 0 0;
-  top: 17.4em;
+  top: 17.45em;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -556,17 +584,29 @@
   background-color: #fff;
   box-shadow: 0 5px 12px rgba(177, 177, 177, 0.4);
   width: 100%;
-  opacity: 0;
-  /* max-width: 25em; */
+  overflow: hidden;
   margin-bottom: 0.9em;
   border-radius: 1em;
   padding: 0.8em 0 0.8em 0.7em;
 }
-.menu__card:hover {
-  box-shadow: 0 5px 12px rgb(177, 177, 177);
+.menu__card:hover .menu__card__checked {
+  transform: translateX(-4.2em);
+}
+.menu__card:hover .fa-circle-check {
+  transform: rotate(2turn);
+  transition-duration: 500ms;
+}
+.menu__card:hover .menu__card__price {
+  transform: translateX(-4.2em);
+}
+.menu__card:hover .menu__card__titre {
+  margin-right: 8em;
+}
+.menu__card:hover .menu__card__desc {
+  margin-right: 10em;
 }
 
-.menu__section__list__card__price {
+.menu__card__price {
   font-size: 1em;
   font-weight: 500;
   color: black;
@@ -574,19 +614,33 @@
   position: absolute;
   right: 1.5em;
   bottom: 0.8em;
+  transition: transform 500ms;
 }
-.menu__section__list__card__titre {
+.menu__card__titre {
   font-size: 1.1em;
   font-weight: 500;
   color: black;
   font-family: "roboto";
+  width: auto;
+  margin-right: 4em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-wrap: break-Word;
+  overflow: hidden;
 }
-.menu__section__list__card__desc {
+.menu__card__desc {
   font-size: 0.9em;
   font-weight: 300;
   color: black;
   font-family: "roboto";
+  display: -webkit-box;
   margin-top: 0.3em;
+  margin-right: 4.5em;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-wrap: break-Word;
+  overflow: hidden;
 }
 
 .header__nav__logo {

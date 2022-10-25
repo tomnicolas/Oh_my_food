@@ -4,35 +4,55 @@
     background-color: #fff;
     box-shadow: $btn-shadow $color-shadow-lighter;
     width: 100%;
-    opacity: 0;
-    /* max-width: 25em; */
+    overflow: hidden;
     margin-bottom: 0.9em;
     border-radius: 1em;
     padding: 0.8em 0 0.8em 0.7em;
-    &:hover {
-        box-shadow: $btn-shadow $color-shadow;
+    &:hover .menu__card__checked {
+        transform: translateX(-4.2em);
     }
-}
+    &:hover .fa-circle-check{
+        transform: rotate(2turn);
+        transition-duration: $anim-menu-card-duree-down;
+    } 
+    &:hover .menu__card__price {
+        transform: translateX(-4.2em);
+    }
+    &:hover .menu__card__titre {
+        margin-right: 8em;
+    }
+    &:hover .menu__card__desc {
+        margin-right: 10em;
+    }
+} 
 
-.menu__section__list__card {
+.menu__card {
 
     &__price {
         @include font;
         position: absolute;
         right: 1.5em;
         bottom: 0.8em;
+        transition: transform $anim-menu-card-duree-down;
     }
-
     &__titre {
         @include font(1.1em);
+        width: auto;
+        margin-right: 4em;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        word-wrap: break-Word;
+        overflow: hidden;
     }
-    
     &__desc {
         @include font($si:0.9em,$wei:300);
+        display: -webkit-box;
         margin-top: 0.3em;
-
+        margin-right: 4.5em;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        word-wrap: break-Word;
+        overflow: hidden;
     }
-
-
-
 }

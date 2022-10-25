@@ -19,6 +19,9 @@ $btn-back-rad: linear-gradient(173deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1
 
 $margin-titres-sec: 2em 0 0 0.8em;
 
+$max-width-mini: 800px;
+$max-width-maxi: 1000px;
+
 $breakpoints: (
     mobile:768px,
     tablette-down:992px,
@@ -26,6 +29,7 @@ $breakpoints: (
 );
 
 $anim-menu-card-duree: 800ms;
+$anim-menu-card-duree-down: 500ms;
 $nombre-menu-card: 10;
 $anim-menu-card-delay: $anim-menu-card-duree / $nombre-menu-card;
 
