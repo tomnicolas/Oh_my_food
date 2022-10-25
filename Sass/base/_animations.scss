@@ -55,3 +55,24 @@
 
   
 }
+.menu__card {
+  animation: menu-card $anim-menu-card-duree forwards;
+  @for $i from 1 through $nombre-menu-card {
+    &--#{$i} {
+        animation-delay: $anim-menu-card-delay * $i;
+     }
+}
+}
+
+
+@keyframes menu-card {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+} 
+

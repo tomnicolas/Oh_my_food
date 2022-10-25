@@ -1,9 +1,10 @@
-.menu__section__list__card {
+.menu__card {
     @include flex($ai:flex-start);
     position: relative;
     background-color: #fff;
     box-shadow: $btn-shadow $color-shadow-lighter;
     width: 100%;
+    opacity: 0;
     /* max-width: 25em; */
     margin-bottom: 0.9em;
     border-radius: 1em;
@@ -11,6 +12,9 @@
     &:hover {
         box-shadow: $btn-shadow $color-shadow;
     }
+}
+
+.menu__section__list__card {
 
     &__price {
         @include font;

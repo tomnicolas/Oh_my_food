@@ -23,4 +23,11 @@ $breakpoints: (
     mobile:768px,
     tablette-down:992px,
     tablette:1000px
-)
+);
+
+$anim-menu-card-duree: 800ms;
+$nombre-menu-card: 10;
+$anim-menu-card-delay: $anim-menu-card-duree / $nombre-menu-card;
+
+
+
