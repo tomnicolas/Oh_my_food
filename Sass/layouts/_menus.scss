@@ -1,9 +1,9 @@
 .menu {
     @include flex();
-    max-width: 800px;
+    max-width: 1000px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 1em;
+    padding: 0 1.7em 0 1em;
     background-color: $color-back;
     &__head {
         @include flex($ai:space-between);
@@ -18,7 +18,7 @@
         right: 0;
         margin-left: auto;
         margin-right: auto;
-        max-width: 800px;
+        max-width: 1010px;
     }
 }
 .menu__section {
@@ -39,9 +39,6 @@
 
 .menu__section__list {
     @include flex;
-    width: 98%;
+    width: 100%;
     margin: 0.5em 0 1.6em 0;
-    @media screen and (min-width: 768px) {
-        @include flex($dir:row);
-       }
 }

@@ -1,7 +1,7 @@
 .fonc {
     @include flex($ai:none);
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     &__liste{
@@ -10,10 +10,11 @@
         padding-left: 2em;
         padding-right: 1.4em;
         margin: 2em 0 4em 0;
-        gap: 1.5em
+        gap: 1.5em;
+        @include media(tablette) {
+            @include flex(row, nowrap,space-between, center);
+        }
     }
-    &__titre {
-        @include font(1.5em,600);
-        margin: $margin-titres-sec ;
-    }
+    
+    
 }

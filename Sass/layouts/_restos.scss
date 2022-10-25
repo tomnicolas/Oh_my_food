@@ -4,25 +4,23 @@
     margin-left: auto;
     margin-right: auto;
     background-color: $color-back;
+    max-width: 1000px;
+    @include media(tablette) {
+        border-radius: 2em 2em 0 0;
+    }
     &__liste {
         @include flex($dir:row);
             width: auto;
             padding-left: 1.3em;
             padding-right: 1.3em;
             margin: 1.4em 0 3em 0;
-            gap: 1em;
+            gap: 1.2em;
         @include media(mobile) {
             display: grid;
-            grid-template-columns: 49% 49%;
+            grid-template-columns: 48% 48%;
             grid-template-rows: auto;
         }
-        @include media(tablette) {
-            @include flex(row, nowrap);
     }
     
-    &__titre {
-        @include font(1.5em,600);
-        margin: $margin-titres-sec ;
-    }
-    }
+    
 }

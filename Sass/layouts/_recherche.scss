@@ -2,17 +2,27 @@
     @include flex;
     width: 100%;
     background-color: darken($color-back, 5%);
-            
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    @include media(tablette) {
+        border-radius:  0 0 2em 2em ;
+    }
+               
 }
 
 .rech__desc {
     @include flex;
     background-color: $color-back;
-    height: 18em;
+    height: auto;
     width: 100%;
+    @include media(tablette) {
+        border-radius:  0 0 2em 2em ;
+    }
     &__titre {
         @include font(1.5em);
         text-align: center;
+        margin-top: 1em;
         margin-bottom: 0.6em;
         width: 70%;
     }

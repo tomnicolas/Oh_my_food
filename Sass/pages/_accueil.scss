@@ -1,0 +1,4 @@
+.section__titre {
+    @include font(1.5em,600);
+    margin: $margin-titres-sec ;
+}
