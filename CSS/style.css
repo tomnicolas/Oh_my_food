@@ -5,60 +5,61 @@
   list-style: none;
 }
 
-.coeur__index i {
-  position: absolute;
-  bottom: 1.5em;
-  right: 1em;
-}
-
-.coeur__restos i {
-  position: absolute;
-  right: 1em;
-}
-
-.box {
+.coeur__index {
   position: relative;
-  background: var(--dark);
-  border: 0.25rem solid var(--dark);
-  height: 8rem;
-  width: 8rem;
-  outline: 0;
-  overflow: hidden; /* Set to none to see fill square outside box */
 }
-
-.box::before {
-  content: url(/images/st-white.svg);
-  /* content: "FILL";
-  font-size: 2rem;
-  color: var(--background);
-  font-family: Arial, Helvetica, sans-serif; */
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.box::after {
-  content: "";
+.coeur__index .fa-solid {
   position: absolute;
-  bottom: -50%; /* Center sauare */
-  left: -50%; /* Center sauare */
-  height: 200%;
-  width: 200%;
-  background-color: var(--background);
-  border-radius: 35%; /* Smooth edges to appear like liquid */
-  animation: spin 6s ease-in-out infinite; /* Set to forwards to freeze on last frame */
+  z-index: 2;
+  line-height: 24px;
+  right: 1.5em;
+  bottom: 1em;
+  color: transparent;
+  background: -webkit-linear-gradient(90deg, #9356DC 0%, #FF79DA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+.coeur__index .fa-solid:hover {
+  opacity: 1;
+}
+.coeur__index .fa-regular {
+  position: absolute;
+  z-index: 1;
+  line-height: 24px;
+  right: 1.5em;
+  bottom: 1em;
 }
 
-@keyframes spin {
-  0% {
-    transform: translateY(0) rotate(0deg);
-  }
-  100% {
-    transform: translateY(-100%) rotate(400deg);
-  }
+.coeur__restos {
+  position: relative;
+  right: 1.5em;
 }
+.coeur__restos .fa-solid {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: -0.5em;
+  line-height: 24px;
+  color: transparent;
+  background: -webkit-linear-gradient(90deg, #9356DC 0%, #FF79DA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+.coeur__restos .fa-solid:hover {
+  opacity: 1;
+}
+.coeur__restos .fa-regular {
+  position: absolute;
+  z-index: 1;
+  line-height: 24px;
+  right: 0;
+  bottom: -0.5em;
+}
+
 .fonc {
   display: flex;
   flex-direction: column;
@@ -170,25 +171,28 @@
 }
 .menu__head {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: space-between;
-  font-size: 0.9em;
-  font-weight: 400;
-  color: black;
-  font-family: "Shrikhand";
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
   background-color: hsl(0deg, 0%, 93%);
   z-index: 1;
   padding: 2em 1.2em;
   border-radius: 2.5em 2.5em 0 0;
-  top: 19.65em;
+  top: 17.4em;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
   max-width: 1010px;
+}
+
+.menu__head__titre {
+  font-size: 1.7em;
+  font-weight: 400;
+  color: black;
+  font-family: "Shrikhand";
 }
 
 .menu__section {
@@ -386,11 +390,6 @@
   content: "";
 }
 
-#heart-2 {
-  color: #9c47fc;
-  display: block;
-}
-
 .header__nav__back-button {
   position: absolute;
   left: 1.5em;
@@ -517,6 +516,9 @@
   margin-bottom: 0.9em;
   border-radius: 1em;
   padding: 0.8em 0 0.8em 0.7em;
+}
+.menu__section__list__card:hover {
+  box-shadow: 0 5px 12px rgb(177, 177, 177);
 }
 .menu__section__list__card__price {
   font-size: 1em;
