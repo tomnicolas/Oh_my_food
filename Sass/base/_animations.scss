@@ -84,7 +84,7 @@
 
 @keyframes menu-card {
   0% {
-    transform: translateY(10px);
+    transform: translateY(20px);
     opacity: 0;
   }
   100% {
@@ -101,3 +101,88 @@
     transform: translateX(0);
   }
 } 
+
+.loader {
+  @include flex();
+  background-color: hwb(0 100% 0% / 0.9);
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  transform-origin: left;
+  animation: loader 0.9ms 4.2s forwards;
+}
+
+@keyframes loader {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.box {
+  animation: animation-box 1s linear 8;
+}
+
+@keyframes animation-box {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-3em);
+  }
+}
+
+.square-1 {
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  opacity: 0;
+  border-radius: 0.3em;
+  background: $color-pri;  
+  transform-origin: bottom right;
+  animation: 3s cubic-bezier(.77,.02,.9,.62) 2 animation-square;
+}
+.square-2 {
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  opacity: 0;
+  border-radius: .3em;
+  background: $color-sec;  
+  transform-origin: bottom right;
+  animation-delay: 1s;
+  animation: 3s cubic-bezier(.77,.02,.9,.62) 1s 2 animation-square;
+}
+
+.square-3 {
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  opacity: 0;
+  border-radius: .3em;
+  background: $color-ter;
+  transform-origin: bottom right;
+  animation-delay: 2s;
+  animation: 3s cubic-bezier(.77,.02,.9,.62) 2s 2 animation-square;
+}
+
+@keyframes animation-square {
+  
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  33.4% {
+    transform: rotate(90deg);
+    opacity: 1;
+  }  
+  33.5%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

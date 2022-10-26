@@ -61,37 +61,37 @@
 }
 
 .menu__card {
-  animation: menu-card 800ms forwards;
+  animation: menu-card 1000ms forwards;
 }
 .menu__card--1 {
-  animation-delay: 80ms;
+  animation-delay: 100ms;
 }
 .menu__card--2 {
-  animation-delay: 160ms;
+  animation-delay: 200ms;
 }
 .menu__card--3 {
-  animation-delay: 240ms;
+  animation-delay: 300ms;
 }
 .menu__card--4 {
-  animation-delay: 320ms;
-}
-.menu__card--5 {
   animation-delay: 400ms;
 }
+.menu__card--5 {
+  animation-delay: 500ms;
+}
 .menu__card--6 {
-  animation-delay: 480ms;
+  animation-delay: 600ms;
 }
 .menu__card--7 {
-  animation-delay: 560ms;
+  animation-delay: 700ms;
 }
 .menu__card--8 {
-  animation-delay: 640ms;
+  animation-delay: 800ms;
 }
 .menu__card--9 {
-  animation-delay: 720ms;
+  animation-delay: 900ms;
 }
 .menu__card--10 {
-  animation-delay: 800ms;
+  animation-delay: 1000ms;
 }
 
 .menu__card__checked {
@@ -116,7 +116,7 @@
 
 @keyframes menu-card {
   0% {
-    transform: translateY(10px);
+    transform: translateY(20px);
     opacity: 0;
   }
   100% {
@@ -130,6 +130,92 @@
   }
   100% {
     transform: translateX(0);
+  }
+}
+.loader {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: hwb(0 100% 0%/0.9);
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  transform-origin: left;
+  animation: loader 0.9ms 4.2s forwards;
+}
+
+@keyframes loader {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+.box {
+  animation: animation-box 1s linear 8;
+}
+
+@keyframes animation-box {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-3em);
+  }
+}
+.square-1 {
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  opacity: 0;
+  border-radius: 0.3em;
+  background: rgb(146, 87, 219);
+  transform-origin: bottom right;
+  animation: 3s cubic-bezier(0.77, 0.02, 0.9, 0.62) 2 animation-square;
+}
+
+.square-2 {
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  opacity: 0;
+  border-radius: 0.3em;
+  background: rgb(255, 121, 218);
+  transform-origin: bottom right;
+  animation-delay: 1s;
+  animation: 3s cubic-bezier(0.77, 0.02, 0.9, 0.62) 1s 2 animation-square;
+}
+
+.square-3 {
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  opacity: 0;
+  border-radius: 0.3em;
+  background: rgb(153, 226, 208);
+  transform-origin: bottom right;
+  animation-delay: 2s;
+  animation: 3s cubic-bezier(0.77, 0.02, 0.9, 0.62) 2s 2 animation-square;
+}
+
+@keyframes animation-square {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  33.4% {
+    transform: rotate(90deg);
+    opacity: 1;
+  }
+  33.5% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
 .fonc {
@@ -584,6 +670,7 @@
   background-color: #fff;
   box-shadow: 0 5px 12px rgba(177, 177, 177, 0.4);
   width: 100%;
+  opacity: 0;
   overflow: hidden;
   margin-bottom: 0.9em;
   border-radius: 1em;
