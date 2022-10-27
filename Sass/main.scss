@@ -4,12 +4,12 @@
 @import "base/base";
 @import "base/animations";
 
+@import "layouts/loader";
+@import "layouts/header";
+@import "layouts/recherche";
 @import "layouts/fonctionnement";
 @import "layouts/footer";
-@import "layouts/grids";
-@import "layouts/header";
 @import "layouts/menus";
-@import "layouts/recherche";
 @import "layouts/restos";
 
 @import "components/buttons";
