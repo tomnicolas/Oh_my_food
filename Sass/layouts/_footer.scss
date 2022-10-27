@@ -3,6 +3,10 @@
     background-color: $color-back-footer;
     color: #fff;
     padding: 1.6em 1.4em 1.8em 1.4em;
+    &__logo {
+        @include font(1.4em,400,#fff,'Shrikhand');
+        margin-bottom: 0.7em;    
+    }
 }
 
 .footer__liens__liste {
@@ -24,8 +28,9 @@
         color: $color-sec;
     }
     &__click {
-    @include font($si: 1em,$wei: 400,$clr: #fff);
+    @include font($si: 1em,$wei: 400,);
         margin-bottom: 0.5em; 
+        color: #fff;
         &:hover {
         color: $color-sec;
         }

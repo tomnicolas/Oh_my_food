@@ -1,7 +1,8 @@
-.rech__description__explore {
+.recherche__description__explore {
+    @include flex;
     position: relative;
-    height: 3.6em;
-    padding: 0em 1.6em;    
+    height: 3.1em;
+    padding: 0 1.6em;    
     border-radius: 2em;
     background: $btn-back-rad;
     box-shadow: $btn-shadow;
@@ -13,7 +14,7 @@
         color: $color-shadow-darker;
     }
     & a {
-        @include font(1.1em,500,white); 
+        @include font(1em,500,white); 
     }
 }
 
@@ -36,7 +37,8 @@
     }
 }
 
-.fonc__card__click, .rech__bouton__click, .resto__card__click{
+
+.fonctionnement__card__click, .recherche__bouton__click, .resto__card__click{
     display: block;
     z-index: 1;
     &:after {
@@ -55,3 +57,4 @@
     color: #000;
 
 }
+

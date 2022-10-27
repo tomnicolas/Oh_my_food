@@ -22,3 +22,12 @@
     &{ @content; }
   }
 }
+
+@mixin square-animation(){
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  opacity: 0;
+  border-radius: 0.3em;  
+  transform-origin: bottom right;  
+}

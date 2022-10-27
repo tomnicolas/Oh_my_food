@@ -39,3 +39,31 @@
         margin-top:0.3em;
     }
 }
+
+.coeur__index {
+    position: relative;
+    & .fa-solid {
+      position:absolute;
+      z-index: 2;
+      line-height: 24px;
+      right: 1.5em;
+      bottom: 1em;
+      color:transparent;
+      background:-webkit-linear-gradient(90deg, #9356DC 0%, #FF79DA 100%);
+      background-clip:text;
+      -webkit-background-clip:text;
+      opacity: 0;
+      transition: opacity 400ms ease; 
+        &:hover {
+          opacity: 1;
+        }
+    }
+    .fa-regular {
+      position: absolute;
+      z-index: 1;
+      line-height: 24px;
+      right: 1.5em;
+      bottom: 1em;
+      }
+  } 
+  

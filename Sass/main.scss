@@ -2,21 +2,19 @@
 @import "utils/mixins";
 
 @import "base/base";
-@import "base/animations";
 
 @import "layouts/loader";
 @import "layouts/header";
 @import "layouts/recherche";
 @import "layouts/fonctionnement";
-@import "layouts/footer";
 @import "layouts/menus";
 @import "layouts/restos";
+@import "layouts/footer";
 
 @import "components/buttons";
 @import "components/cards_restos";
 @import "components/cards_fonc";
 @import "components/cards_menus";
-@import "components/logo";
 
 @import "pages/accueil";
 @import "pages/restos";

@@ -57,3 +57,50 @@
         overflow: hidden;
     }
 }
+
+.menu__card {
+    animation: menu-card $anim-menu-card-duree forwards;
+    @for $i from 1 through $nombre-menu-card {
+      &--#{$i} {
+          animation-delay: $anim-menu-card-delay * $i;
+       }
+    }
+}
+
+.menu__card__checked {
+    @include flex;
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    overflow: hidden;
+    background-color: $color-ter;
+    border-radius: 0 1em 1em 0;
+    height: 4.5em;
+    width: 4.2em;
+    right: -4.2em;
+    transform-origin: right;
+    overflow: hidden;    
+    transition: transform $anim-menu-card-duree-down;
+}
+
+
+@keyframes menu-card {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+} 
+
+@keyframes menu-card-checked {
+    0% {
+        transform: translateX(4.2em);
+    }
+    100% {
+        transform: translateX(0);
+    }
+} 
+  

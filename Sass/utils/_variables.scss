@@ -4,9 +4,10 @@ $color-sec: rgb(255, 121, 218);
 $color-ter: rgb(153, 226, 208);
 $color-ter-darker: darken($color-ter, $amount: 40%);
 
-$color-back: hsl(0, 0%, 93%);
+$color-back: hsl(0, 0%, 96%);
 $color-back-footer: rgb(63, 63, 63); 
 $color-text-alt:rgb(149, 149, 149);
+
 
 $color-shadow: rgb(177, 177, 177);
 $color-shadow-lighter: rgba($color-shadow, 0.4);
@@ -33,5 +34,7 @@ $anim-menu-card-duree-down: 500ms;
 $nombre-menu-card: 10;
 $anim-menu-card-delay: $anim-menu-card-duree / $nombre-menu-card;
 
-
+$square-transition:cubic-bezier(.50,.02,.9,.62);
+$square-iteration: 2;
+$square-animation-duree: 3s;
 
