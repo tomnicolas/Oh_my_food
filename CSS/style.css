@@ -428,7 +428,12 @@
 }
 
 .menu__bouton {
-  height: 3.6em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 3.1em;
   padding: 0em 3.5em;
   border-radius: 2em;
   width: fit-content;
@@ -443,7 +448,7 @@
   color: #656565;
 }
 .menu__bouton a {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 500;
   color: white;
   font-family: "roboto";
