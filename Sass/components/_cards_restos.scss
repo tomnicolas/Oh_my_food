@@ -1,5 +1,5 @@
 .resto__card {
-    @include flex(column,nowrap,start,none);
+    @include flex(column,nowrap,start,normal);
     width: 100%;
     height: 15.8em;
     background-color: white;

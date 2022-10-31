@@ -1,5 +1,5 @@
 .fonctionnement {
-    @include flex($ai:none);
+    @include flex($ai:normal);
     width: 100%;
     max-width: $max-width-maxi;
     margin-left: auto;
